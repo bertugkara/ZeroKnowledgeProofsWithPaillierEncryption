@@ -141,6 +141,10 @@ app.post('/createProof', (request, response) => {
     }
 
     //send to the server
+    /*
+    SEND TO SERVER LOGIC, LATER
+     */
+
     response.status(200).send(proofResponse);
 });
 
