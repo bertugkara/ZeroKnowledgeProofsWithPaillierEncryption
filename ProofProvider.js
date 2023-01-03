@@ -106,7 +106,6 @@ function getPublicKey() {
             let PublicKey = JSON.parse(response.body);
             publicKey = new paillier.PublicKey(BigInt(PublicKey.n), BigInt(PublicKey.g));
             console.log(publicKey)
-            console.log(privateKey)
             console.log("------------------------------------------------------------")
             console.log("Zero Knowledge Provider Initialized, Waiting for Requests to create Proof.")
         } else if (error) console.log(error)
